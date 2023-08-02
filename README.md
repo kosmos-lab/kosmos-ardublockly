@@ -15,8 +15,6 @@ This is all packaged in a self contained executable desktop application for Wind
 * Compatible with a wide range of official Arduino Boards
 * Works on Windows / Linux / Mac OS X
 
-Ardublockly is still under development and a few features are not yet implemented. A to-do list can be found in the [TODO.md][3] file.
-
 Currently tested under Windows with Python 2.7, 3.4 and 3.8 and in Linux and MacOS X with Python 2.7.
 
 
