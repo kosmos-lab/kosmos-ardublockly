@@ -3,20 +3,9 @@ Ardublockly is a visual programming editor for Arduino. It is based on Google's 
 
 The `ArdublocklyServer` Python package initialises a local server to be able to compile and load the Arduino code using the [Arduino IDE][2].
 
-This is all packaged in a self contained executable desktop application for Windows, Mac OS X, and Linux.
-
 ![Ardublockly desktop program screenshot][desktop_screeshot]
 
-
-## Features
-* Generates Arduino code with visual drag-and-drop blocks
-* Uploads the code to an Arduino Board
-* Useful "code block warnings"
-* Compatible with a wide range of official Arduino Boards
-* Works on Windows / Linux / Mac OS X
-
-Currently tested under Windows with Python 2.7, 3.4 and 3.8 and in Linux and MacOS X with Python 2.7.
-
+For further information on Ardublockly please visit https://github.com/carlosperate/ardublockly
 
 ## Cloning the repository
 Please note that there are submodules in the repository that need initialisation. So, to correctly clone the Ardublockly repository:
@@ -29,11 +18,9 @@ git submodule update --init --recursive
 
 
 ## Installing
-The desktop application of the basic version (i.e. without grove and LED blocks) is available for Windows/Mac/Linux and runs as a stand-alone executable that can be downloaded from the [Ardublockly repository releases page][4].
-For further information please visit https://github.com/carlosperate/ardublockly
 
 #### "Core version" (Python server only)
-For using the KosmoS version, please run the core software that can be used by running only the Python server, which loads the web interface on your local browser (Chrome recommended).
+For using this KosmoS version of Ardublockly, please run the core software that can be used by running only the Python server, which loads the web interface on your local browser (Chrome recommended).
 
 The quick version: Clone this repository, initialise all submodules, and execute:
 
@@ -41,7 +28,7 @@ The quick version: Clone this repository, initialise all submodules, and execute
 python start.py
 ```
 
-This will work on Windows, Linux (including ARM) and Mac OS X, with Python >2.7 or >3.4
+This will work on Windows, Linux (including ARM) and Mac OS X, with Python >2.7 or >3.4. >3.8
 
 Full installation instructions can be found in [this Github repository Wiki][5].
 
@@ -56,19 +43,17 @@ Full installation instructions can be found in [this Github repository Wiki][5].
 This project has been inspired by [BlocklyDuino][16].
 
 Blockly original source is Copyright of Google Inc. [https://developers.google.com/blockly/][1]. 
-A list of changes to Ardublockly can be found in the [Blockly subdirectory README][17] file. 
+
 Ardublockly Copyright (c) 2016 carlosperate https://github.com/carlosperate/
 
 
 ## License
-Copyright (c) 2016 carlosperate https://github.com/carlosperate/
+Copyright (c) 2023 ... https://github.com/kosmos-lab
 
 Unless stated otherwise, the source code of this projects is
 licensed under the Apache License, Version 2.0 (the "License");
 you may not use any of the licensed files within this project
 except in compliance with the License.
-
-The full document can be found in the [LICENSE][9] file.
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
