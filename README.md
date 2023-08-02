@@ -17,31 +17,23 @@ This is all packaged in a self contained executable desktop application for Wind
 
 Ardublockly is still under development and a few features are not yet implemented. A to-do list can be found in the [TODO.md][3] file.
 
-Currently tested under Windows with Python 2.7 and 3.4 and in Linux and MacOS X with Python 2.7.
+Currently tested under Windows with Python 2.7, 3.4 and 3.8 and in Linux and MacOS X with Python 2.7.
 
 
 ## Cloning the repository
 Please note that there are submodules in the repository that need initialisation. So, to correctly clone the Ardublockly repository:
 
 ```
-git clone https://github.com/carlosperate/ardublockly.git
-cd ardublockly
+git clone https://github.com/kosmos-lab/kosmos-ardublockly.git
+cd kosmos-ardublockly
 git submodule update --init --recursive
 ```
 
 
 ## Installing
-The desktop application is available for Windows/Mac/Linux and runs as a stand-alone executable that can be downloaded from the [Ardublockly repository releases page][4].
+The desktop application of the basic version (i.e. without grove and LED blocks) is available for Windows/Mac/Linux and runs as a stand-alone executable that can be downloaded from the [Ardublockly repository releases page][4].
 
-You will also need the [Arduino IDE version 1.6.x or higher][2].
-
-#### Development builds
-You can also test __UNSTABLE__ development builds automatically generated every time an update is added to the GitHub repository:
-
-| Linux build         | Windows build       | Mac OS X build       |
-|:-------------------:|:-------------------:|:--------------------:|
-| [![Linux Build Status](https://circleci.com/gh/carlosperate/ardublockly/tree/master.svg?style=svg)](https://circleci.com/gh/carlosperate/ardublockly/tree/master) | [![Windows Build status](https://ci.appveyor.com/api/projects/status/t877g920hdiifc2i?svg=true)](https://ci.appveyor.com/project/carlosperate/ardublockly) | [![Mac Build Status](https://travis-ci.org/carlosperate/ardublockly.svg?branch=master)](https://travis-ci.org/carlosperate/ardublockly) |
-| [Download Link][12] | [Download Link][13] | [Download Link][14]  |
+For further information please visit https://github.com/carlosperate/ardublockly
 
 #### "Core version" (Python server only)
 If you prefer, the core software can be used by running only the Python server, which loads the web interface on your local browser (Chrome recommended).
