@@ -32,13 +32,10 @@ git submodule update --init --recursive
 
 ## Installing
 The desktop application of the basic version (i.e. without grove and LED blocks) is available for Windows/Mac/Linux and runs as a stand-alone executable that can be downloaded from the [Ardublockly repository releases page][4].
-
 For further information please visit https://github.com/carlosperate/ardublockly
 
 #### "Core version" (Python server only)
-If you prefer, the core software can be used by running only the Python server, which loads the web interface on your local browser (Chrome recommended).
-
-Full installation instructions for this version can be found in [this Github repository Wiki][5].
+For using the KosmoS version, please run the core software that can be used by running only the Python server, which loads the web interface on your local browser (Chrome recommended).
 
 The quick version: Clone this repository, initialise all submodules, and execute:
 
@@ -48,6 +45,7 @@ python start.py
 
 This will work on Windows, Linux (including ARM) and Mac OS X, with Python >2.7 or >3.4
 
+Full installation instructions can be found in [this Github repository Wiki][5].
 
 ## Running
 1. [Install Ardublockly][5].
@@ -56,30 +54,12 @@ This will work on Windows, Linux (including ARM) and Mac OS X, with Python >2.7 
 3. Configure Ardublockly to locate the Arduino IDE [following these instructions][6].
 
 
-## Online Demos
-A demo of the latest release of Ardublockly main interface can be found in the following two links (to load the code into an Arduino it requires the full Ardublockly application to be downloaded and run on your computer):
-
-#### [Ardublockly][10]
-![WebApp screenshot responsive design][web_screenshot_responsive]
-
-#### [Ardublockly classic][11]
-![WebApp screenshot][web_screenshot_classic]
-
-
-## Documentation
-The documentation, including installation instructions, configuration instructions, and developer information can be found in the [Ardublockly GitHub repository Wiki][7].
-
-To download the documentation you can git clone the wiki data:
-
-```
-git clone https://github.com/carlosperate/ardublockly.wiki.git
-```
-
-
 ## Credit
 This project has been inspired by [BlocklyDuino][16].
 
-Blockly original source is Copyright of Google Inc. [https://developers.google.com/blockly/][1]. A list of changes to the Blockly fork can be found in the [Blockly subdirectory README][17] file.
+Blockly original source is Copyright of Google Inc. [https://developers.google.com/blockly/][1]. 
+A list of changes to Ardublockly can be found in the [Blockly subdirectory README][17] file. 
+Ardublockly Copyright (c) 2016 carlosperate https://github.com/carlosperate/
 
 
 ## License
