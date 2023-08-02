@@ -7,6 +7,8 @@ The `ArdublocklyServer` Python package initialises a local server to be able to 
 
 For further information on Ardublockly please visit https://github.com/carlosperate/ardublockly
 
+This version of Kosmos-ardublockly has been extended with blocks (i.e. Arduino-Grove modules, Neopixel LEDs) as well as the German language and is being further developed for use as a tool for maker workshops with students.
+
 ## Cloning the repository
 Please note that there are submodules in the repository that need initialisation. So, to correctly clone the Ardublockly repository:
 
@@ -66,11 +68,10 @@ limitations under the License.
 [2]: http://www.arduino.cc/en/main/software/
 [3]: TODO.md
 [4]: https://github.com/carlosperate/ardublockly/releases/
-[5]: https://github.com/carlosperate/ardublockly/wiki/Installing-Ardublockly
-[6]: https://github.com/carlosperate/ardublockly/wiki/Configure-Ardublockly
-[7]: https://github.com/carlosperate/ardublockly/wiki
-[8]: https://github.com/carlosperate/ardublockly/compare/blockly-original...master
-[9]: https://github.com/carlosperate/ardublockly/blob/master/LICENSE
+[5]: https://github.com/kosmos-ardublockly/ardublockly/wiki/Installing-Ardublockly
+[6]: https://github.com/kosmos-ardublockly/ardublockly/wiki/Configure-Ardublockly
+[7]: https://github.com/kosmos-ardublockly/ardublockly/wiki
+[9]: https://github.com/kosmos-ardublockly/ardublockly/blob/master/LICENSE
 [10]: http://ardublockly.embeddedlog.com/demo/index.html
 [11]: http://ardublockly.embeddedlog.com/demo/classic/index.html
 [12]: http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html?prefix=linux/
