@@ -16,10 +16,10 @@ Ardublockly.TOOLBOX_XML =
 '    <block type="controls_if"></block>' +
 '    <block type="logic_compare"></block>' +
 '    <block type="logic_operation"></block>' +
-'    <block type="logic_negate"></block>' +
-'    <block type="logic_boolean"></block>' +
-'    <block type="logic_null"></block>' +
-'    <block type="logic_ternary"></block>' +
+//'    <block type="logic_negate"></block>' +
+//'    <block type="logic_boolean"></block>' +
+//'    <block type="logic_null"></block>' +
+//'    <block type="logic_ternary"></block>' +
 '  </category>' +
 '  <sep></sep>' +
 '  <category id="catLoops" name="Loops">' +
@@ -54,10 +54,10 @@ Ardublockly.TOOLBOX_XML =
 '  <category id="catMath" name="Math">' +
 '    <block type="math_number"></block>' +
 '    <block type="math_arithmetic"></block>' +
-'    <block type="math_single"></block>' +
-'    <block type="math_trig"></block>' +
-'    <block type="math_constant"></block>' +
-'    <block type="math_number_property"></block>' +
+//'    <block type="math_single"></block>' +
+//'    <block type="math_trig"></block>' +
+//'    <block type="math_constant"></block>' +
+//'    <block type="math_number_property"></block>' +
 '    <block type="math_change">' +
 '      <value name="DELTA">' +
 '        <block type="math_number">' +
@@ -67,18 +67,18 @@ Ardublockly.TOOLBOX_XML =
 '    </block>' +
 '    <block type="math_round"></block>' +
 '    <block type="math_modulo"></block>' +
-'    <block type="math_constrain">' +
-'      <value name="LOW">' +
-'        <block type="math_number">' +
-'          <field name="NUM">1</field>' +
-'        </block>' +
-'      </value>' +
-'      <value name="HIGH">' +
-'        <block type="math_number">' +
-'          <field name="NUM">100</field>' +
-'        </block>' +
-'      </value>' +
-'    </block>' +
+//'    <block type="math_constrain">' +
+//'      <value name="LOW">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">1</field>' +
+//'        </block>' +
+//'      </value>' +
+//'      <value name="HIGH">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">100</field>' +
+//'        </block>' +
+//'      </value>' +
+//'    </block>' +
 '    <block type="math_random_int">' +
 '      <value name="FROM">' +
 '        <block type="math_number">' +
@@ -91,7 +91,7 @@ Ardublockly.TOOLBOX_XML =
 '        </block>' +
 '      </value>' +
 '    </block>' +
-'    <block type="math_random_float"></block>' +
+//'    <block type="math_random_float"></block>' +
 '    <block type="base_map"></block>' +
 '  </category>' +
 '  <sep></sep>' +
@@ -103,8 +103,8 @@ Ardublockly.TOOLBOX_XML =
 '        <block type="text"></block>' +
 '      </value>' +
 '    </block>' +
-'    <block type="text_length"></block>' +
-'    <block type="text_isEmpty"></block>' +
+//'    <block type="text_length"></block>' +
+//'    <block type="text_isEmpty"></block>' +
 //'    <!--block type="text_trim"></block Need to update block -->' +
 //'    <!--block type="text_print"></block Part of the serial comms -->' +
 '  </category>' +
@@ -112,12 +112,12 @@ Ardublockly.TOOLBOX_XML =
 '  <category id="catVariables" name="Variables">' +
 '    <block type="variables_get"></block>' +
 '    <block type="variables_set"></block>' +
-'    <block type="variables_set">' +
-'      <value name="VALUE">' +
-'        <block type="variables_set_type"></block>' +
-'      </value>' +
-'    </block>' +
-'    <block type="variables_set_type"></block>' +
+//'    <block type="variables_set">' +
+//'      <value name="VALUE">' +
+//'        <block type="variables_set_type"></block>' +
+//'      </value>' +
+//'    </block>' +
+//'    <block type="variables_set_type"></block>' +
 '  </category>' +
 '  <sep></sep>' +
 '  <category id="catFunctions" name="Functions" custom="PROCEDURE"></category>' +
@@ -174,61 +174,178 @@ Ardublockly.TOOLBOX_XML =
 '    <block type="infinite_loop"></block>' +
 '  </category>' +
 '  <sep></sep>' +
-'  <category id="catAudio" name="Audio">' +
-'    <block type="io_tone">' +
-'      <field name="TONEPIN">0</field>' +
-'      <value name="FREQUENCY">' +
-'        <shadow type="math_number">' +
-'          <field name="NUM">220</field>' +
-'        </shadow>' +
-'      </value>' +
-'    </block>' +
-'    <block type="io_notone"></block>' +
-'  </category>' +
+//'  <category id="catAudio" name="Audio">' +
+//'    <block type="io_tone">' +
+//'      <field name="TONEPIN">0</field>' +
+//'      <value name="FREQUENCY">' +
+//'        <shadow type="math_number">' +
+//'          <field name="NUM">220</field>' +
+//'        </shadow>' +
+//'      </value>' +
+//'    </block>' +
+//'    <block type="io_notone"></block>' +
+//'  </category>' +
+//'  <sep></sep>' +
+//'  <category id="catMotors" name="Motorst">' +
+//'    <block type="servo_write">' +
+//'      <value name="SERVO_ANGLE">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">90</field>' +
+//'        </block>' +
+//'      </value>' +
+//'    </block>' +
+//'    <block type="servo_read"></block>' +
+//'    <block type="stepper_config">' +
+//'      <field name="STEPPER_NUMBER_OF_PINS">2</field>' +
+//'      <field name="STEPPER_PIN1">1</field>' +
+//'      <field name="STEPPER_PIN2">2</field>' +
+//'      <value name="STEPPER_STEPS">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">100</field>' +
+//'        </block>' +
+//'      </value>' +
+//'      <value name="STEPPER_SPEED">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">10</field>' +
+//'        </block>' +
+//'      </value>' +
+//'    </block>' +
+//'    <block type="stepper_step">' +
+//'      <value name="STEPPER_STEPS">' +
+//'        <block type="math_number">' +
+//'          <field name="NUM">10</field>' +
+//'        </block>' +
+//'      </value>' +
+//'    </block>' +
+//'  </category>' +
+//'  <sep></sep>' +
+//'  <category id="catComms" name="Comms">' +
+//'    <block type="serial_setup"></block>' +
+//'    <block type="serial_print"></block>' +
+//'    <block type="text_prompt_ext">' +
+//'      <value name="TEXT">' +
+//'        <block type="text"></block>' +
+//'      </value>' +
+//'    </block>' +
+//'    <block type="spi_setup"></block>' +
+//'    <block type="spi_transfer"></block>' +
+//'    <block type="spi_transfer_return"></block>' +
+//'  </category>' +
 '  <sep></sep>' +
-'  <category id="catMotors" name="Motors">' +
-'    <block type="servo_write">' +
-'      <value name="SERVO_ANGLE">' +
-'        <block type="math_number">' +
-'          <field name="NUM">90</field>' +
-'        </block>' +
-'      </value>' +
-'    </block>' +
-'    <block type="servo_read"></block>' +
-'    <block type="stepper_config">' +
-'      <field name="STEPPER_NUMBER_OF_PINS">2</field>' +
-'      <field name="STEPPER_PIN1">1</field>' +
-'      <field name="STEPPER_PIN2">2</field>' +
-'      <value name="STEPPER_STEPS">' +
-'        <block type="math_number">' +
-'          <field name="NUM">100</field>' +
-'        </block>' +
-'      </value>' +
-'      <value name="STEPPER_SPEED">' +
-'        <block type="math_number">' +
-'          <field name="NUM">10</field>' +
-'        </block>' +
-'      </value>' +
-'    </block>' +
-'    <block type="stepper_step">' +
-'      <value name="STEPPER_STEPS">' +
-'        <block type="math_number">' +
-'          <field name="NUM">10</field>' +
-'        </block>' +
-'      </value>' +
-'    </block>' +
-'  </category>' +
-'  <sep></sep>' +
-'  <category id="catComms" name="Comms">' +
-'    <block type="serial_setup"></block>' +
-'    <block type="serial_print"></block>' +
-'    <block type="text_prompt_ext">' +
-'      <value name="TEXT">' +
-'        <block type="text"></block>' +
-'      </value>' +
-'    </block>' +
-'    <block type="spi_setup"></block>' +
-'    <block type="spi_transfer"></block>' +
-'    <block type="spi_transfer_return"></block>' +
-'  </category>' +
+'   <category id="kosmos_Grove" name="Grove">'+
+//'         <block type=\"grove_led\">'+
+//'            <field name=\"CONNECTOR\">2</field>'+
+//'      <value name=\"STATE\">'+
+//'            <block type=\"io_highlow\">'+
+//'              <field name=\"STATE\">HIGH</field>'+
+//'            </block>'+
+//'          </value>'+
+//'     </block>'+
+//'      <block type=\"grove_button\"></block>'+
+'     <block type=\"grove_pir\"></block>' +
+'     <block type=\"grove_temperature\"></block>' +
+'     <block type=\"grove_sound_sensor\"></block>' +
+'     <block type=\"grove_light_sensor\"></block>' +
+'      <block type=\"grove_lcd_rgb\">'+
+'        <value name=\"LINE_1\">'+
+'          <block type=\"text\">'+
+'            <field name=\"TEXT\">Hello world!</field>'+
+'          </block>'+
+'        </value>'+
+'      </block>'+
+'    </category>' +
+'    <sep></sep>' +
+'   <category id="kosmos_LED" name="Neopixel">' +
+'   <block type="neopixel_led_init">' +
+'        <value name="num_led_init">' +
+'            <block type="math_number">' +
+'            <field name="NUM">1</field>' +
+'          </block>' +
+'        </value>' +
+'   </block>' +
+'   <block type="neopixel_led_brightness">' +
+'         <value name="led_brightness">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'  </block>' +
+' <block type="neopixel_led_rgb">' +
+'        <value name="NUM">' +
+'         <block type="math_number">' +
+'           <field name="NUM">0</field>' +
+'         </block>' +
+'        </value>' +
+'        <value name="RED">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="GREEN">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="BLUE">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'      </block>' +
+'     <block type="neopixel_led_fade">' +
+'        <value name="position">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'         <value name="fromRed">' +
+'          <block type="math_number">' +
+'            <field name="NUM">255</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="fromGreen">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="fromBlue">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="toRed">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="toGreen">' +
+'          <block type="math_number">' +
+'            <field name="NUM">255</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="toBlue">' +
+'          <block type="math_number">' +
+'            <field name="NUM">0</field>' +
+'          </block>' +
+'        </value>' +
+'        <value name="sec">' +
+'          <block type="math_number">' +
+'            <field name="NUM">10</field>' +
+'          </block>' +
+'        </value>' +
+'     </block>' +
+
+    //'      <block type=\"grove_button\"></block>'+
+    //'     <block type=\"grove_pir\"></block>' +
+    //'     <block type=\"grove_temperature\"></block>' +
+    //'     <block type=\"grove_sound_sensor\"></block>' +
+    //'     <block type=\"grove_light_sensor\"></block>' +
+    //'      <block type=\"grove_lcd_rgb\">' +
+    //'        <value name=\"LINE_1\">' +
+    //'          <block type=\"text\">' +
+    //'            <field name=\"TEXT\">Hello world!</field>' +
+    //'          </block>' +
+    //'        </value>' +
+    //'      </block>' +
+'    </category>' +
 '</xml>';

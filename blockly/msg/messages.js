@@ -1120,3 +1120,69 @@ Blockly.Msg.PROCEDURES_IFRETURN_TOOLTIP = 'If a value is true, then return a sec
 Blockly.Msg.PROCEDURES_IFRETURN_HELPURL = 'http://c2.com/cgi/wiki?GuardClause';
 /// warning - This appears if the user tries to use this block outside of a function definition.
 Blockly.Msg.PROCEDURES_IFRETURN_WARNING = 'Warning: This block may be used only within a function definition.';
+
+
+
+//////NEU///////////////////////KosmoS
+/// Toolbox category name
+Blockly.Msg.BLOCKS_GROVE_CATEGORY = 'Grove';
+
+/// LED block
+Blockly.Msg.BLOCKS_GROVE_LED = 'set LED on connector';
+Blockly.Msg.BLOCKS_GROVE_LED_TIP = 'Turns the LED On (HIGH) or Off (LOW).';
+
+/// Button block
+Blockly.Msg.BLOCKS_GROVE_BUTTON = 'read Button pressed state on connector';
+Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Set to HIGH when the button is pressed, otherwise LOW.';
+
+/// Joystick block
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK = 'read Joystick axis';
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK_2 = 'on connector';
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK_TIP = 'Reads the joystick position value from 200-800.';
+
+/// PIR block
+Blockly.Msg.BLOCKS_GROVE_PIR = 'read PIR state on connector_mes';
+Blockly.Msg.BLOCKS_GROVE_PIR_TIP = 'On motion sense it outputs HIGH, otherwise LOW.';
+
+/// Temperature block
+Blockly.Msg.BLOCKS_GROVE_TEMPERATURE = 'read  Temperature on connector';
+Blockly.Msg.BLOCKS_GROVE_TEMPERATURE_TIP = 'Returns the temperate in ºC.';
+
+
+/// Light block 
+Blockly.Msg.BLOCKS_GROVE_LIGHT = 'read light on connector';
+Blockly.Msg.BLOCKS_GROVE_LIGHT_TIP = 'returns value for ambient light brightness';
+
+/// Sound block 
+Blockly.Msg.BLOCKS_GROVE_SOUND = 'read Sound on connector';
+Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environment';
+
+/// LCD RGB block
+Blockly.Msg.BLOCKS_GROVE_LCD_RGB = 'set LCD RGB text to';
+Blockly.Msg.BLOCKS_GROVE_LCD_RGB_TIP = 'Sets the text on the LCD display.';
+
+
+/// Toolbox category name
+Blockly.Msg.BLOCKS_NEOPIXEL_CATEGORY = 'Neopixel';
+
+///LED INIT
+Blockly.Msg.NEOPIXEL_LED_INIT_INIT = 'Anzahl der LEDs:_mes';
+Blockly.Msg.NEOPIXEL_LED_INIT_PIN = 'an PIN';
+Blockly.Msg.NEOPIXEL_LED_INIT_TIP = "Meldet die LED an mit Anzahl der Pixel und Pin-Nummer";
+
+//LED Farbe setzen
+Blockly.Msg.NEOPIXEL_LED_SETCOLOR = 'Farbe setzen';
+Blockly.Msg.NEOPIXEL_LED_PXNR = 'LED Nummer:';
+Blockly.Msg.NEOPIXEL_LED_RED = 'Rot:';
+Blockly.Msg.NEOPIXEL_LED_GREEN = 'Grün:';
+Blockly.Msg.NEOPIXEL_LED_BLUE = 'Blau:';
+
+//LED Brightness
+Blockly.Msg.NEOPIXEL_LED_BRIGHT = 'Helligkeit';
+
+//FADE
+Blockly.Msg.NEOPIXEL_LED_FADE = 'Fading';
+Blockly.Msg.NEOPIXEL_LED_FADE_FROM = 'Von Farbe:';
+Blockly.Msg.NEOPIXEL_LED_FADE_TO = 'Bis Farbe';
+Blockly.Msg.NEOPIXEL_LED_FADE_SEC = 'Sekunden'
+

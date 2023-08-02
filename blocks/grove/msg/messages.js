@@ -15,7 +15,7 @@ goog.require('Blockly.Msg.en');
  * Due to the frequency of long strings, the 80-column wrap rule need not apply
  * to message files.
  */
-
+/*
 /// Toolbox category name
 Blockly.Msg.BLOCKS_GROVE_CATEGORY = 'Grove';
 
@@ -43,3 +43,4 @@ Blockly.Msg.BLOCKS_GROVE_TEMPERATURE_TIP = 'Returns the temperate in ºC.';
 /// LCD RGB block
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB = 'set Grove LCD RGB text to';
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB_TIP = 'Sets the text on the LCD display.';
+*/

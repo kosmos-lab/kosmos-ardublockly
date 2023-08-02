@@ -342,7 +342,7 @@ Blockly.Msg.TEXT_ISEMPTY_HELPURL = "https://github.com/google/blockly/wiki/Text#
 Blockly.Msg.TEXT_ISEMPTY_TITLE = "%1 is empty";
 Blockly.Msg.TEXT_ISEMPTY_TOOLTIP = "Returns true if the provided text is empty.";
 Blockly.Msg.TEXT_JOIN_HELPURL = "https://github.com/google/blockly/wiki/Text#text-creation";
-Blockly.Msg.TEXT_JOIN_TITLE_CREATEWITH = "create text with";
+Blockly.Msg.TEXT_JOIN_TITLE_CREATEWITH = "create text with"; 
 Blockly.Msg.TEXT_JOIN_TOOLTIP = "Create a piece of text by joining together any number of items.";
 Blockly.Msg.TEXT_LENGTH_HELPURL = "https://github.com/google/blockly/wiki/Text#text-modification";
 Blockly.Msg.TEXT_LENGTH_TITLE = "length of %1";
@@ -510,3 +510,68 @@ Blockly.Msg.NEW_INSTANCE = "New instance...";
 Blockly.Msg.NEW_INSTANCE_TITLE = "New instance name:";
 Blockly.Msg.RENAME_INSTANCE = "Rename instance...";
 Blockly.Msg.RENAME_INSTANCE_TITLE = "Rename all '%1' instances to:";
+
+//eigene Blöcke ab hier
+/// Toolbox category name
+Blockly.Msg.BLOCKS_GROVE_CATEGORY = 'Grove';
+
+/// LED block
+Blockly.Msg.BLOCKS_GROVE_LED = 'set LED on connector';
+Blockly.Msg.BLOCKS_GROVE_LED_TIP = 'Turns the LED On (HIGH) or Off (LOW).';
+
+/// Button block
+Blockly.Msg.BLOCKS_GROVE_BUTTON = 'read button pressed state on connector';
+Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Set to HIGH when the button is pressed, otherwise LOW.';
+
+/// Joystick block
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK = 'read joystick axis';
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK_2 = 'on connector';
+Blockly.Msg.BLOCKS_GROVE_JOYSTICK_TIP = 'Reads the joystick position value from 200-800.';
+
+/// PIR block
+Blockly.Msg.BLOCKS_GROVE_PIR = 'read PIR state on connector';
+Blockly.Msg.BLOCKS_GROVE_PIR_TIP = 'On motion sense it outputs HIGH, otherwise LOW.';
+
+/// Temperature block
+Blockly.Msg.BLOCKS_GROVE_TEMPERATURE = 'read temperature on connector';
+Blockly.Msg.BLOCKS_GROVE_TEMPERATURE_TIP = 'Returns the temperate in ºC.';
+
+
+/// Light block 
+Blockly.Msg.BLOCKS_GROVE_LIGHT = 'read light on connector';
+Blockly.Msg.BLOCKS_GROVE_LIGHT_TIP = 'returns value for ambient light brightness';
+
+/// Sound block 
+Blockly.Msg.BLOCKS_GROVE_SOUND = 'read sound on connector';
+Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environment';
+
+/// LCD RGB block
+Blockly.Msg.BLOCKS_GROVE_LCD_RGB = 'set LCD RGB text to';
+Blockly.Msg.BLOCKS_GROVE_LCD_RGB_TIP = 'Sets the text on the LCD display.';
+
+
+/// Toolbox category name
+Blockly.Msg.BLOCKS_NEOPIXEL_CATEGORY = 'Neopixel'; 
+
+///LED INIT
+Blockly.Msg.NEOPIXEL_LED_INIT_INIT = 'number of LEDs:';
+Blockly.Msg.NEOPIXEL_LED_INIT_PIN = 'on pin#';
+Blockly.Msg.NEOPIXEL_LED_INIT_TIP = "Initialise LED number of Pixel and connected pin";
+
+//LED Farbe setzen
+Blockly.Msg.NEOPIXEL_LED_SETCOLOR = 'set color';
+Blockly.Msg.NEOPIXEL_LED_PXNR = 'LED number:';
+Blockly.Msg.NEOPIXEL_LED_RED = 'red:';
+Blockly.Msg.NEOPIXEL_LED_GREEN = 'green:';
+Blockly.Msg.NEOPIXEL_LED_BLUE = 'blue:';
+
+//LED Brightness
+Blockly.Msg.NEOPIXEL_LED_BRIGHT = 'brightness';
+
+//FADE
+
+Blockly.Msg.NEOPIXEL_LED_FADE = 'fade';
+Blockly.Msg.NEOPIXEL_LED_FADE_FROM = 'from color:';
+Blockly.Msg.NEOPIXEL_LED_FADE_TO = 'to color:';
+Blockly.Msg.NEOPIXEL_LED_FADE_SEC = 'in seconds'
+

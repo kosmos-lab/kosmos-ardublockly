@@ -121,6 +121,32 @@ Blockly.Arduino['grove_temperature'] = function(block) {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+/*kosmos neu*/
+Blockly.Arduino['grove_light_sensor'] = function (block) {
+    var pins = block.connectorPinUsage();
+    Blockly.Arduino.reservePin(block, pins[0],
+        Blockly.Arduino.PinTypes.GROVE_light, 'this Grove module');
+
+    var pinSetupCode = 'pinMode(' + pins[0] + ', INPUT);';
+    Blockly.Arduino.addSetup('grove_light_' + pins[0], pinSetupCode, false);
+    var code = 'analogRead(' + pins[0] + ')';
+    return [code, Blockly.Arduino.ORDER_ATOMIC]
+};
+
+Blockly.Arduino['grove_sound_sensor'] = function (block) {
+    var pins = block.connectorPinUsage();
+    Blockly.Arduino.reservePin(
+        block, pins[0], Blockly.Arduino.PinTypes.GROVE_PIR, 'this Grove module');
+
+    var pinSetupCode = 'pinMode(' + pins[0] + ', INPUT);';
+    Blockly.Arduino.addSetup('grove_pir_' + pins[0], pinSetupCode, false);
+
+ //   var dropdown_pin = this.getFieldValue('PIN');
+    var code = 'analogRead(' + pins[0] + ')';
+    return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+
 /**
  * Function setting a Grove LCD RGB Backlight message. Connector uses I2C.
  * Arduino code: setup { lcd.begin(16, 2);
