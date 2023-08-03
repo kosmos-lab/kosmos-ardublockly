@@ -38,7 +38,7 @@ Full installation instructions can be found in [this Github repository Wiki][5].
 1. [Install Ardublockly][5].
 2. Install the [Arduino IDE][2] version 1.6.x or higher (latest version is always recommended).
 3. Run Ardublockly as defined in your installation method.
-3. Configure Ardublockly to locate the Arduino IDE [following these instructions][6].
+3. Configure Ardublockly to locate the Arduino IDE.
 
 
 ## Credit
@@ -50,7 +50,7 @@ Ardublockly Copyright (c) 2016 carlosperate https://github.com/carlosperate/
 
 
 ## License
-Copyright (c) 2023 ... https://github.com/kosmos-lab
+Copyright (c) 2023 DFKI https://github.com/kosmos-lab
 
 Unless stated otherwise, the source code of this projects is
 licensed under the Apache License, Version 2.0 (the "License");
@@ -65,12 +65,12 @@ limitations under the License.
 
 
 [1]: https://developers.google.com/blockly/
-[2]: http://www.arduino.cc/en/main/software/
+[2]: http://www.arduino.cc/en/software/
 [3]: TODO.md
 [4]: https://github.com/carlosperate/ardublockly/releases/
-[5]: https://github.com/kosmos-ardublockly/ardublockly/wiki/Installing-Ardublockly
+[5]: https://github.com/carlosperate/ardublockly/wiki/Installing-Ardublockly
 [6]: https://github.com/kosmos-ardublockly/ardublockly/wiki/Configure-Ardublockly
-[7]: https://github.com/kosmos-ardublockly/ardublockly/wiki
+[7]: hhttps://github.com/carlosperate/ardublockly/wiki/
 [9]: https://github.com/kosmos-ardublockly/ardublockly/blob/master/LICENSE
 [10]: http://ardublockly.embeddedlog.com/demo/index.html
 [11]: http://ardublockly.embeddedlog.com/demo/classic/index.html
