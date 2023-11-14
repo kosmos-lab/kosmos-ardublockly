@@ -241,7 +241,8 @@ Ardublockly.TOOLBOX_XML =
 //'            </block>'+
 //'          </value>'+
 //'     </block>'+
-//'      <block type=\"grove_button\"></block>'+
+'      <block type=\"grove_button\"></block>' +
+'      <block type=\"grove_ultrasonic\"></block>' +
 '     <block type=\"grove_pir\"></block>' +
 '     <block type=\"grove_temperature\"></block>' +
 '     <block type=\"grove_sound_sensor\"></block>' +

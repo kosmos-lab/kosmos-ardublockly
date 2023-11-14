@@ -513,7 +513,7 @@ Blockly.Msg.RENAME_INSTANCE_TITLE = "Rename all '%1' instances to:";
 
 //eigene Blöcke ab hier
 /// Toolbox category name
-Blockly.Msg.BLOCKS_GROVE_CATEGORY = 'Grove';
+Blockly.Msg.BLOCKS_GROVE_CATEGORY = 'Grove_';
 
 /// LED block
 Blockly.Msg.BLOCKS_GROVE_LED = 'set LED on connector';
@@ -522,6 +522,11 @@ Blockly.Msg.BLOCKS_GROVE_LED_TIP = 'Turns the LED On (HIGH) or Off (LOW).';
 /// Button block
 Blockly.Msg.BLOCKS_GROVE_BUTTON = 'read button pressed state on connector';
 Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Set to HIGH when the button is pressed, otherwise LOW.';
+
+/// Ultrasonic block
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC = 'read ultrasonic_ranger state in cm on connector';
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC_TIP = 'Distance in cm';
+
 
 /// Joystick block
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK = 'read joystick axis';

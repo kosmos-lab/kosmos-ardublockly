@@ -1135,6 +1135,10 @@ Blockly.Msg.BLOCKS_GROVE_LED_TIP = 'Turns the LED On (HIGH) or Off (LOW).';
 Blockly.Msg.BLOCKS_GROVE_BUTTON = 'read Button pressed state on connector';
 Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Set to HIGH when the button is pressed, otherwise LOW.';
 
+/// Button ultrasonic
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC = 'read Button pressed state on connector';
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC_TIP = 'Set to HIGH when the button is pressed, otherwise LOW.';
+
 /// Joystick block
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK = 'read Joystick axis';
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK_2 = 'on connector';

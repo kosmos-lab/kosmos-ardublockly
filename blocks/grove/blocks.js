@@ -174,6 +174,34 @@ Blockly.Blocks['grove_temperature'] = {
   connectorPinUsage: Blockly.Blocks['grove_led'].connectorPinUsage,
 };
 
+Blockly.Blocks['grove_ultrasonic'] = {
+    /**
+     * Grove ultra Sensor module block definition.
+     * @this Blockly.Block
+     */
+    init: function () {
+        this.setHelpUrl(
+            'http://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2');
+        this.setColour(Blockly.Blocks.grove.HUE);
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldImage(
+                '/blocks/grove/img/Ultrasonic_small.jpg', 32, 32))
+            .appendField(Blockly.Msg.BLOCKS_GROVE_ULTRASONIC)
+            .appendField(new Blockly.FieldDropdown(
+                Blockly.Arduino.Boards.selected.groveDigital), 'CONNECTOR');
+        this.setOutput(true, Blockly.Types.NUMBER.output);
+        this.setTooltip(Blockly.Msg.BLOCKS_GROVE_ULTRASONIC_TIP);
+    },
+    /** @return {!string} The type of return value for the block, an integer. */
+    getBlockType: function () {
+        return Blockly.Types.NUMBER;
+    },
+    /** Updates the content of the the pin related fields.In this case analog. */
+    updateFields: Blockly.Blocks['grove_joystick'].updateFields,
+    /** Returns a list with the connector pins used. For this, just the first. */
+    connectorPinUsage: Blockly.Blocks['grove_led'].connectorPinUsage,
+};
+
 Blockly.Blocks['grove_light_sensor'] = {
  /**
   * Eigener Grove Light Sensor module block definition.

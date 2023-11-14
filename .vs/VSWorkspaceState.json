@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ardublockly",
+    "\\blockly",
+    "\\blockly\\msg\\js",
+    "\\blocks",
+    "\\blocks\\grove",
+    "\\blocks\\grove\\msg\\lang",
+    "\\blocks\\neopixel",
+    "\\blocks\\neopixel\\msg"
+  ],
+  "SelectedNode": "\\blocks\\neopixel\\msg\\messages.js",
+  "PreviewInSolutionExplorer": false
+}

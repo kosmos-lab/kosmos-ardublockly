@@ -530,6 +530,10 @@ Blockly.Msg.BLOCKS_GROVE_LED_TIP = 'Schaltet die LED ein (HIGH) oder aus (LOW).'
 Blockly.Msg.BLOCKS_GROVE_BUTTON = 'lese den Status des Button an Pin#';
 Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Wenn der Button gedrückt wird ist es "1" (HIGH), ansonsten "0" (LOW).';
 
+//ultrasonic block
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC = 'lese den Abstand in cm an Pin#';
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC_TIP = 'Abstand in cm';
+
 /// Joystick block
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK = 'Lese Axe von Joystick'; 
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK_2 = 'am PIN#';

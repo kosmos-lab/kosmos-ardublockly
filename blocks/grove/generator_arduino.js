@@ -122,6 +122,45 @@ Blockly.Arduino['grove_temperature'] = function(block) {
 };
 
 /*kosmos neu*/
+
+/**
+ * Function for reading Grove Abstandssensor.
+ * @param {!Blockly.Block} block Block to generate the code from.
+ * @return {array} Completed code with order of operation.
+ */
+/*
+Blockly.Arduino['grove_ultrasonic'] = function (block) {
+    var pins = block.connectorPinUsage();
+    Blockly.Arduino.reservePin(block, pins[0],
+        Blockly.Arduino.PinTypes.GROVE_ULTRASONIC, 'this Grove module');
+
+//    var pinSetupCode = 'pinMode(' + pins[0] + ', INPUT);';
+//    Blockly.Arduino.addSetup('grove_ultrasonic_' + pins[0], pinSetupCode, false);
+
+    Blockly.Arduino.addInclude('grove_ultrasonic', '#include <Ultrasonic.h>');
+    Blockly.Arduino.addDeclaration('grove_ultrasonic', 'Ultrasonic ultrasonic(7)', false);
+
+    var code = 'ultrasonic.MeasureInCentimeters();\n';
+    return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+*/
+
+//Blockly.Arduino.grove_ultrasonic_ranger = function () {
+Blockly.Arduino['grove_ultrasonic'] = function (block) {
+    var pins = block.connectorPinUsage();
+    Blockly.Arduino.reservePin(block, pins[0],
+        Blockly.Arduino.PinTypes.GROVE_PIR, 'this Grove module');
+
+ //   var dropdown_pin = this.getFieldValue('PIN');
+ //   var dropdown_unit = this.getFieldValue('UNIT');
+    Blockly.Arduino.definitions_['define_ultrasonic'] = '#include <Ultrasonic.h>\n';
+    Blockly.Arduino.definitions_['var_ultrasonic' + pins[0]] = 'Ultrasonic ultrasonic_' + pins[0] + '(' + pins[0] + ');';
+    var code;
+    code = 'ultrasonic_' + pins[0] + '.MeasureInCentimeters()';
+    return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+
 Blockly.Arduino['grove_light_sensor'] = function (block) {
     var pins = block.connectorPinUsage();
     Blockly.Arduino.reservePin(block, pins[0],
