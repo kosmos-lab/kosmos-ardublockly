@@ -185,7 +185,7 @@ Blockly.Blocks['grove_ultrasonic'] = {
         this.setColour(Blockly.Blocks.grove.HUE);
         this.appendDummyInput()
             .appendField(new Blockly.FieldImage(
-                '/blocks/grove/img/Ultrasonic_small.jpg', 32, 32))
+                '/blocks/grove/img/Ultras.png', 32, 32))
             .appendField(Blockly.Msg.BLOCKS_GROVE_ULTRASONIC)
             .appendField(new Blockly.FieldDropdown(
                 Blockly.Arduino.Boards.selected.groveDigital), 'CONNECTOR');
@@ -211,7 +211,7 @@ Blockly.Blocks['grove_light_sensor'] = {
         this.setColour(Blockly.Blocks.grove.HUE);
         this.appendDummyInput()
             .appendField(new Blockly.FieldImage(
-                '/blocks/grove/img/light.jpg', 32, 32))
+                '/blocks/grove/img/light.png', 32, 32))
             .appendField(Blockly.Msg.BLOCKS_GROVE_LIGHT)
             .appendField(new Blockly.FieldDropdown(
                 Blockly.Arduino.Boards.selected.groveAnalog), 'CONNECTOR');
@@ -229,13 +229,40 @@ Blockly.Blocks['grove_light_sensor'] = {
     connectorPinUsage: Blockly.Blocks['grove_led'].connectorPinUsage,
 };
 
+Blockly.Blocks['grove_moisture_sensor'] = {
+    /**
+     * Eigener Grove Moisture Sensor module block definition.
+     * @this Blockly.Block
+     */
+    init: function () {
+        this.setColour(Blockly.Blocks.grove.HUE);
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldImage(
+                '/blocks/grove/img/moisture.png', 32, 32))
+            .appendField(Blockly.Msg.BLOCKS_GROVE_MOISTURE)
+            .appendField(new Blockly.FieldDropdown(
+                Blockly.Arduino.Boards.selected.groveAnalog), 'CONNECTOR');
+        this.setOutput(true, Blockly.Types.NUMBER.output);
+        // this.setInputsInline(!0);
+        this.setTooltip(Blockly.Msg.BLOCKS_GROVE_MOISTURE_TIP);
+    },
+    /** @return {!string} The type of return value for the block, an integer. */
+    getBlockType: function () {
+        return Blockly.Types.NUMBER;
+    },
+    /** Updates the content of the the pin related fields.In this case analog. */
+    updateFields: Blockly.Blocks['grove_joystick'].updateFields,
+    /** Returns a list with the connector pins used. For this, just the first. */
+    connectorPinUsage: Blockly.Blocks['grove_led'].connectorPinUsage,
+};
+
 
 Blockly.Blocks.grove_sound_sensor = {
     init: function () {
         this.setColour(Blockly.Blocks.grove.HUE);
         this.appendDummyInput()
             .appendField(new Blockly.FieldImage(
-                '/blocks/grove/img/sound.jpg', 32, 32))
+                '/blocks/grove/img/sound.png', 32, 32))
             .appendField(Blockly.Msg.BLOCKS_GROVE_SOUND)
             .appendField(new Blockly.FieldDropdown(
                 Blockly.Arduino.Boards.selected.groveAnalog), 'CONNECTOR');

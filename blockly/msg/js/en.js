@@ -546,6 +546,10 @@ Blockly.Msg.BLOCKS_GROVE_TEMPERATURE_TIP = 'Returns the temperate in ºC.';
 Blockly.Msg.BLOCKS_GROVE_LIGHT = 'read light on connector';
 Blockly.Msg.BLOCKS_GROVE_LIGHT_TIP = 'returns value for ambient light brightness';
 
+/// Moisture block 
+Blockly.Msg.BLOCKS_GROVE_MOISTURE = 'read moisture on connector';
+Blockly.Msg.BLOCKS_GROVE_MOISTURE_TIP = 'returns value for (soil) moisture';
+
 /// Sound block 
 Blockly.Msg.BLOCKS_GROVE_SOUND = 'read sound on connector';
 Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environment';

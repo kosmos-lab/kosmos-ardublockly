@@ -172,6 +172,17 @@ Blockly.Arduino['grove_light_sensor'] = function (block) {
     return [code, Blockly.Arduino.ORDER_ATOMIC]
 };
 
+Blockly.Arduino['grove_moisture_sensor'] = function (block) {
+    var pins = block.connectorPinUsage();
+    Blockly.Arduino.reservePin(block, pins[0],
+        Blockly.Arduino.PinTypes.GROVE_MOISTURE, 'this Grove module');
+
+    var pinSetupCode = 'pinMode(' + pins[0] + ', INPUT);';
+    Blockly.Arduino.addSetup('grove_moisture_' + pins[0], pinSetupCode, false);
+    var code = 'analogRead(' + pins[0] + ')';
+    return [code, Blockly.Arduino.ORDER_ATOMIC]
+};
+
 Blockly.Arduino['grove_sound_sensor'] = function (block) {
     var pins = block.connectorPinUsage();
     Blockly.Arduino.reservePin(

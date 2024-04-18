@@ -531,7 +531,7 @@ Blockly.Msg.BLOCKS_GROVE_BUTTON = 'lese den Status des Button an Pin#';
 Blockly.Msg.BLOCKS_GROVE_BUTTON_TIP = 'Wenn der Button gedrückt wird ist es "1" (HIGH), ansonsten "0" (LOW).';
 
 //ultrasonic block
-Blockly.Msg.BLOCKS_GROVE_ULTRASONIC = 'lese den Abstand in cm an Pin#';
+Blockly.Msg.BLOCKS_GROVE_ULTRASONIC = 'lese den Abstand an Pin#';
 Blockly.Msg.BLOCKS_GROVE_ULTRASONIC_TIP = 'Abstand in cm';
 
 /// Joystick block
@@ -540,7 +540,7 @@ Blockly.Msg.BLOCKS_GROVE_JOYSTICK_2 = 'am PIN#';
 Blockly.Msg.BLOCKS_GROVE_JOYSTICK_TIP = 'Liest den Wert der Joystick Position von 200-800.';
 
 /// PIR block
-Blockly.Msg.BLOCKS_GROVE_PIR = 'Lese PIR status an Pin#';
+Blockly.Msg.BLOCKS_GROVE_PIR = 'Lese PIR status (Bewegung) an Pin#';
 Blockly.Msg.BLOCKS_GROVE_PIR_TIP = 'Bei Bewegung sendet es HIGH, ansonsten LOW.';
 
 /// Temperature block
@@ -551,6 +551,10 @@ Blockly.Msg.BLOCKS_GROVE_TEMPERATURE_TIP = 'Returns the temperate in ºC.';
 /// Light block 
 Blockly.Msg.BLOCKS_GROVE_LIGHT = 'Lese Lichtstärke an Pin#';
 Blockly.Msg.BLOCKS_GROVE_LIGHT_TIP = 'returns value for ambient light brightness';
+
+/// Moisture block 
+Blockly.Msg.BLOCKS_GROVE_MOISTURE = 'Lese Bodenfeuchte an Pin#';
+Blockly.Msg.BLOCKS_GROVE_MOISTURE_TIP = 'returns value for Feuchtigkeit';
 
 /// Sound block 
 Blockly.Msg.BLOCKS_GROVE_SOUND = 'Lese Lautstärke an Pin#';

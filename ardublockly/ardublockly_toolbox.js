@@ -241,12 +241,13 @@ Ardublockly.TOOLBOX_XML =
 //'            </block>'+
 //'          </value>'+
 //'     </block>'+
-'      <block type=\"grove_button\"></block>' +
+//'      <block type=\"grove_button\"></block>' +
 '      <block type=\"grove_ultrasonic\"></block>' +
-'     <block type=\"grove_pir\"></block>' +
+//'     <block type=\"grove_pir\"></block>' +
 '     <block type=\"grove_temperature\"></block>' +
-'     <block type=\"grove_sound_sensor\"></block>' +
+//'     <block type=\"grove_sound_sensor\"></block>' +
 '     <block type=\"grove_light_sensor\"></block>' +
+'     <block type=\"grove_moisture_sensor\"></block>' +
 '      <block type=\"grove_lcd_rgb\">'+
 '        <value name=\"LINE_1\">'+
 '          <block type=\"text\">'+
@@ -255,7 +256,7 @@ Ardublockly.TOOLBOX_XML =
 '        </value>'+
 '      </block>'+
 '    </category>' +
-'    <sep></sep>' +
+/*'    <sep></sep>' +
 '   <category id="kosmos_LED" name="Neopixel">' +
 '   <block type="neopixel_led_init">' +
 '        <value name="num_led_init">' +
@@ -348,5 +349,5 @@ Ardublockly.TOOLBOX_XML =
     //'          </block>' +
     //'        </value>' +
     //'      </block>' +
-'    </category>' +
+'    </category>' +*/
 '</xml>';
