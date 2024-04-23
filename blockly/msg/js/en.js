@@ -558,6 +558,10 @@ Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environm
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB = 'set LCD RGB text to';
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB_TIP = 'Sets the text on the LCD display.';
 
+/// RGB LED block 
+Blockly.Msg.BLOCKS_GROVE_RGB_LED = 'Schalte Lämpchen auf Farbe';
+Blockly.Msg.BLOCKS_GROVE_RGB_LED_TIP = 'Schaltet Lampe auf angegebene Farbe';
+
 
 /// Toolbox category name
 Blockly.Msg.BLOCKS_NEOPIXEL_CATEGORY = 'Neopixel'; 

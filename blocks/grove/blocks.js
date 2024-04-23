@@ -308,3 +308,36 @@ Blockly.Blocks['grove_lcd_rgb'] = {
     return Blockly.Arduino.Boards.selected.i2cPins[groveI2cId];
   }
 };
+
+/* Setze Chainable Grove LED auf RGB-Wert */
+Blockly.Blocks['grove_rgb_chled'] = {
+    /**
+ * Grove SET LED RGB Color.
+ * @this Blockly.Block
+ */
+    init: function () {
+
+        this.setColour(Blockly.Blocks.grove.HUE);
+        this.appendDummyInput().appendField(new Blockly.FieldImage(
+            '/blocks/grove/img/led.png', 32, 32))
+            .appendField(Blockly.Msg.NEOPIXEL_LED_SETCOLOR);
+        this.appendValueInput("RED")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .setCheck("Number")
+            .appendField(Blockly.Msg.NEOPIXEL_LED_RED);
+        this.appendValueInput("GREEN")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .setCheck("Number")
+            .appendField(Blockly.Msg.NEOPIXEL_LED_GREEN);
+        this.appendValueInput("BLUE")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .setCheck("Number")
+            .appendField(Blockly.Msg.NEOPIXEL_LED_BLUE);
+        this.setInputsInline(true);
+        this.setPreviousStatement(true);
+        this.setNextStatement(true);
+        this.setTooltip('tooltip');
+        this.setHelpUrl('webseite');
+    }
+};
+

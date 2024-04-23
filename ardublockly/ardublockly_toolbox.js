@@ -248,36 +248,8 @@ Ardublockly.TOOLBOX_XML =
 //'     <block type=\"grove_sound_sensor\"></block>' +
 '     <block type=\"grove_light_sensor\"></block>' +
 '     <block type=\"grove_moisture_sensor\"></block>' +
-'      <block type=\"grove_lcd_rgb\">'+
-'        <value name=\"LINE_1\">'+
-'          <block type=\"text\">'+
-'            <field name=\"TEXT\">Hello world!</field>'+
-'          </block>'+
-'        </value>'+
-'      </block>'+
-'    </category>' +
-/*'    <sep></sep>' +
-'   <category id="kosmos_LED" name="Neopixel">' +
-'   <block type="neopixel_led_init">' +
-'        <value name="num_led_init">' +
-'            <block type="math_number">' +
-'            <field name="NUM">1</field>' +
-'          </block>' +
-'        </value>' +
-'   </block>' +
-'   <block type="neopixel_led_brightness">' +
-'         <value name="led_brightness">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'  </block>' +
-' <block type="neopixel_led_rgb">' +
-'        <value name="NUM">' +
-'         <block type="math_number">' +
-'           <field name="NUM">0</field>' +
-'         </block>' +
-'        </value>' +
+'     <block type=\"grove_light_sensor\"></block>' +
+'     <block type="grove_rgb_chled">' +
 '        <value name="RED">' +
 '          <block type="math_number">' +
 '            <field name="NUM">0</field>' +
@@ -294,60 +266,106 @@ Ardublockly.TOOLBOX_XML =
 '          </block>' +
 '        </value>' +
 '      </block>' +
-'     <block type="neopixel_led_fade">' +
-'        <value name="position">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'         <value name="fromRed">' +
-'          <block type="math_number">' +
-'            <field name="NUM">255</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="fromGreen">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="fromBlue">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="toRed">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="toGreen">' +
-'          <block type="math_number">' +
-'            <field name="NUM">255</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="toBlue">' +
-'          <block type="math_number">' +
-'            <field name="NUM">0</field>' +
-'          </block>' +
-'        </value>' +
-'        <value name="sec">' +
-'          <block type="math_number">' +
-'            <field name="NUM">10</field>' +
-'          </block>' +
-'        </value>' +
-'     </block>' +
+'      <block type=\"grove_lcd_rgb\">'+
+'        <value name=\"LINE_1\">'+
+'          <block type=\"text\">'+
+'            <field name=\"TEXT\">Hello world!</field>'+
+'          </block>'+
+'        </value>'+
+'      </block>'+
+'    </category>' +
+//'  <sep></sep>' +
+//'   <category id="kosmos_LED" name="Neopixel">' +
+//'   <block type="neopixel_led_init">' +
+//'        <value name="num_led_init">' +
+//'            <block type="math_number">' +
+//'            <field name="NUM">1</field>' +
+//'          </block>' +
+//'        </value>' +
+//'   </block>' +
+//'   <block type="neopixel_led_brightness">' +
+//'         <value name="led_brightness">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'  </block>' +
+//' <block type="neopixel_led_rgb">' +
+//'        <value name="NUM">' +
+//'         <block type="math_number">' +
+//'           <field name="NUM">0</field>' +
+//'         </block>' +
+//'        </value>' +
+//'        <value name="RED">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="GREEN">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="BLUE">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'  </block>' +
+//'     <block type="neopixel_led_fade">' +
+//'        <value name="position">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'         <value name="fromRed">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">255</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="fromGreen">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="fromBlue">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="toRed">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="toGreen">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">255</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="toBlue">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">0</field>' +
+//'          </block>' +
+//'        </value>' +
+//'        <value name="sec">' +
+//'          <block type="math_number">' +
+//'            <field name="NUM">10</field>' +
+//'          </block>' +
+//'        </value>' +
+//'     </block>' +
 
-    //'      <block type=\"grove_button\"></block>'+
-    //'     <block type=\"grove_pir\"></block>' +
-    //'     <block type=\"grove_temperature\"></block>' +
-    //'     <block type=\"grove_sound_sensor\"></block>' +
-    //'     <block type=\"grove_light_sensor\"></block>' +
-    //'      <block type=\"grove_lcd_rgb\">' +
-    //'        <value name=\"LINE_1\">' +
-    //'          <block type=\"text\">' +
-    //'            <field name=\"TEXT\">Hello world!</field>' +
-    //'          </block>' +
-    //'        </value>' +
-    //'      </block>' +
-'    </category>' +*/
+//    //'      <block type=\"grove_button\"></block>'+
+//    //'     <block type=\"grove_pir\"></block>' +
+//    //'     <block type=\"grove_temperature\"></block>' +
+//    //'     <block type=\"grove_sound_sensor\"></block>' +
+//    //'     <block type=\"grove_light_sensor\"></block>' +
+//    //'      <block type=\"grove_lcd_rgb\">' +
+//    //'        <value name=\"LINE_1\">' +
+//    //'          <block type=\"text\">' +
+//    //'            <field name=\"TEXT\">Hello world!</field>' +
+//    //'          </block>' +
+//    //'        </value>' +
+//   // '      </block>' +
+//'    </category>' +
 '</xml>';

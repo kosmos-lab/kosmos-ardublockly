@@ -556,6 +556,7 @@ Blockly.Msg.BLOCKS_GROVE_LIGHT_TIP = 'returns value for ambient light brightness
 Blockly.Msg.BLOCKS_GROVE_MOISTURE = 'Lese Bodenfeuchte an Pin#';
 Blockly.Msg.BLOCKS_GROVE_MOISTURE_TIP = 'returns value for Feuchtigkeit';
 
+
 /// Sound block 
 Blockly.Msg.BLOCKS_GROVE_SOUND = 'Lese Lautstärke an Pin#';
 Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environment';
@@ -563,6 +564,11 @@ Blockly.Msg.BLOCKS_GROVE_SOUND_TIP = 'detect the sound intensity of the environm
 /// LCD RGB block
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB = 'Schreibe auf dem RGB LC-Display';
 Blockly.Msg.BLOCKS_GROVE_LCD_RGB_TIP = 'Sets the text on the LCD display.';
+
+
+/// RGB LED block 
+Blockly.Msg.BLOCKS_GROVE_RGB_LED = 'Schalte Lämpchen auf Farbe';
+Blockly.Msg.BLOCKS_GROVE_RGB_LED_TIP = 'Schaltet Lampe auf angegebene Farbe';
 
 //Neopixel LED
 /// Toolbox category name

@@ -226,3 +226,17 @@ Blockly.Arduino['grove_lcd_rgb'] = function(block) {
   var code = 'lcd.clear();\nlcd.print(' + line1Text + ');\n';
   return code;
 };
+
+/* Setze LED auf RGB-Wert */
+Blockly.Arduino['grove_rgb_chled'] = function (block) {
+// TODO variable    var value_num = Blockly.Arduino.valueToCode(block, 'NUM', Blockly.Arduino.ORDER_ATOMIC);
+    var value_red = Blockly.Arduino.valueToCode(block, 'RED', Blockly.Arduino.ORDER_ATOMIC);
+    var value_green = Blockly.Arduino.valueToCode(block, 'GREEN', Blockly.Arduino.ORDER_ATOMIC);
+    var value_blue = Blockly.Arduino.valueToCode(block, 'BLUE', Blockly.Arduino.ORDER_ATOMIC);
+    Blockly.Arduino.includes_['grove_rgb_chled'] = '#include <ChainableLED.h>';
+    Blockly.Arduino.definitions_['grove_rgb_chled'] = 'ChainableLED leds(7, 8, 1);';
+  //TODO  Blockly.Arduino.definitions_['led_init'] = '#define NUM_LEDS ' + value_num_led_init + '\n#define DATA_PIN ' + dropdown_pin_led_init + '\nCRGB leds[NUM_LEDS];';
+    var code = 'leds.setColorRGB(0, int(' + value_red + '), int(' + value_green + '), int(' + value_blue + '));';
+    return code;
+};
+
